@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hazimeh Antiques</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <button id="menu-btn">☰</button>
+    <h1>Hazimeh Antiques</h1>
+  </header>
+
+  <nav id="sidebar">
+    <button id="close-btn">✖</button>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <main id="home">
+    <section class="hero" data-aos="fade-down">
+      <img src="assets/logo.jpeg" alt="Hazimeh Logo" />
+      <p>Antiques & Modern Furniture</p>
+    </section>
+
+    <section id="slider" data-aos="fade-up">
+      <h2>Featured Pieces</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/img1.jpeg" alt="Item 1"></div>
+          <div class="swiper-slide"><img src="assets/mirror.jpeg" alt="Item 2"></div>
+          <div class="swiper-slide"><img src="assets/logo.jpeg" alt="Item 3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section id="gallery" data-aos="fade-up">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <a href="assets/img1.jpeg" data-lightbox="antiques"><img src="assets/img1.jpeg" alt="Item 1" /></a>
+        <a href="assets/mirror.jpeg" data-lightbox="antiques"><img src="assets/mirror.jpeg" alt="Item 2" /></a>
+      </div>
+    </section>
+
+    <section id="about" data-aos="fade-up">
+      <h2>About Us</h2>
+      <p>
+        Hazimeh Antiques offers a curated collection of rare and elegant furniture.
+        Combining tradition with timeless design, each piece tells a story of artistry and heritage.
+      </p>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
