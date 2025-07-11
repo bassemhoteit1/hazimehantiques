@@ -73,7 +73,7 @@ img {
 
 /* Hero Section (now used as second section) */
 .hero {
-  height: 60vh;
+  height: 50vh;
   background: linear-gradient(to right, #fdf9f9, #f0f0ff);
   display: flex;
   align-items: center;
