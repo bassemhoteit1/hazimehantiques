@@ -4,39 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hazimeh Antiques</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="site-header">
-    <img src="assets/logo.jpeg" alt="Hazimeh Antiques Logo" class="logo" />
-    <h1>Hazimeh Antiques</h1>
+
+  <header class="header">
+    <div class="container">
+      <h1>Hazimeh Antiques</h1>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <section class="hero">
     <div class="hero-content">
-      <div class="hero-image">
-        <img src="assets/handmade-table.jpeg" alt="Handcrafted Table" />
-      </div>
-      <div class="hero-text">
-        <p class="tagline">Timeless Elegance</p>
-        <h2>Discover the beauty of crafted furniture</h2>
-        <p>
-          At Hazimeh Antiques, we celebrate the beauty of handcrafted furniture. Each piece tells a unique story.
-          Our collection features exquisite sofas, elegant beds, and meticulously crafted tables that embody
-          timeless elegance and rustic charm.
-        </p>
-        <a href="#products" class="cta-button">View Products</a>
-      </div>
+      <h2>Discover the Beauty of <span>Crafted Furniture</span></h2>
+      <p>Elegant. Handcrafted. Timeless.</p>
+      <a href="#products" class="btn-primary">View Products</a>
     </div>
   </section>
 
-  <section id="products" class="products-section">
-    <h2>Our Products</h2>
+  <section id="products" class="products">
+    <h2 class="section-title">Featured Products</h2>
     <div class="product-grid">
       <div class="product-card">
-        <img src="assets/antique-bed-frame.jpeg" alt="Bed Frame" />
-        <h3>Antique Bed Frame</h3>
+        <img src="assets/antique-bed-frame.jpeg" alt="Bed" />
+        <h3>Antique Bed</h3>
       </div>
       <div class="product-card">
         <img src="assets/handmade-table.jpeg" alt="Table" />
@@ -49,10 +46,16 @@
     </div>
   </section>
 
-  <footer class="site-footer">
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Hazimeh</h2>
+      <p>We craft furniture with soul — each piece is a story of beauty, heritage, and timeless design.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
     <p>&copy; 2025 Hazimeh Antiques. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
