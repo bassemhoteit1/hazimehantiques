@@ -2,81 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hazimeh Antiques</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <button id="menu-btn">☰</button>
+  <header class="site-header">
+    <img src="assets/logo.jpeg" alt="Hazimeh Antiques Logo" class="logo" />
     <h1>Hazimeh Antiques</h1>
   </header>
 
-  <nav id="sidebar">
-    <button id="close-btn">✖</button>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
-  </nav>
-
-  <main id="home">
-    <!-- Hero Welcome Section -->
-    <section class="intro" data-aos="fade-in">
-      <img src="assets/logo.jpeg" alt="Hazimeh Logo" />
-      <h2>Welcome to Hazimeh Antiques</h2>
-      <a href="#products" class="scroll-down">↓</a>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" data-aos="fade-up">
-      <h2>Our Products</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="assets/antique-bed-frame.jpeg" alt="Bedframe" />
-          <h3>Antique Bed Frame</h3>
-          <p>Elegant handcrafted wooden frames, timeless and durable.</p>
-        </div>
-        <div class="product-card">
-          <img src="assets/handmade-table.jpeg" alt="Handmade Table" />
-          <h3>Handmade Table</h3>
-          <p>Classic design tables made from premium materials.</p>
-        </div>
-        <div class="product-card">
-          <img src="assets/carpet.jpeg" alt="Carpet" />
-          <h3>Vintage Carpet</h3>
-          <p>Intricately woven carpets that add luxury to your space.</p>
-        </div>
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="assets/handmade-table.jpeg" alt="Handcrafted Table" />
       </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" data-aos="fade-up">
-      <h2>Gallery</h2>
-      <div class="gallery">
-        <a href="assets/img1.jpeg" data-lightbox="antiques"><img src="assets/img1.jpeg" alt="Item 1" /></a>
-        <a href="assets/mirror.jpeg" data-lightbox="antiques"><img src="assets/mirror.jpeg" alt="Item 2" /></a>
+      <div class="hero-text">
+        <p class="tagline">Timeless Elegance</p>
+        <h2>Discover the beauty of crafted furniture</h2>
+        <p>
+          At Hazimeh Antiques, we celebrate the beauty of handcrafted furniture. Each piece tells a unique story.
+          Our collection features exquisite sofas, elegant beds, and meticulously crafted tables that embody
+          timeless elegance and rustic charm.
+        </p>
+        <a href="#products" class="cta-button">View Products</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" data-aos="fade-up">
-      <h2>About Us</h2>
-      <p>
-        Hazimeh Antiques offers a curated collection of rare and elegant furniture.
-        Combining tradition with timeless design, each piece tells a story of artistry and heritage.
-      </p>
-    </section>
-  </main>
+  <section id="products" class="products-section">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="assets/antique-bed-frame.jpeg" alt="Bed Frame" />
+        <h3>Antique Bed Frame</h3>
+      </div>
+      <div class="product-card">
+        <img src="assets/handmade-table.jpeg" alt="Table" />
+        <h3>Handmade Table</h3>
+      </div>
+      <div class="product-card">
+        <img src="assets/carpet.jpeg" alt="Carpet" />
+        <h3>Vintage Carpet</h3>
+      </div>
+    </div>
+  </section>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+  <footer class="site-footer">
+    <p>&copy; 2025 Hazimeh Antiques. All rights reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
