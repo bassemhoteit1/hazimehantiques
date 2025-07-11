@@ -21,6 +21,34 @@ img {
   margin: auto;
 }
 
+/* Welcome Banner (Replaces Hero) */
+.welcome-banner {
+  background: url("assets/intro.jpeg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.welcome-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.welcome-banner h1 {
+  font-family: 'Georgia', serif;
+  font-size: 3.2rem;
+  color: white;
+  z-index: 2;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
 /* Header */
 .header {
   background: #ffffff;
@@ -43,9 +71,9 @@ img {
   font-weight: 600;
 }
 
-/* Hero Section */
+/* Hero Section (now used as second section) */
 .hero {
-  height: 90vh;
+  height: 60vh;
   background: linear-gradient(to right, #fdf9f9, #f0f0ff);
   display: flex;
   align-items: center;
@@ -53,7 +81,7 @@ img {
   text-align: center;
 }
 .hero-content h2 {
-  font-size: 48px;
+  font-size: 42px;
   max-width: 700px;
 }
 .hero-content h2 span {
