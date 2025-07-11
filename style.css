@@ -23,7 +23,7 @@ img {
 
 /* Welcome Banner (Replaces Hero) */
 .welcome-banner {
-  background: url("assets/intro.jpeg") center/cover no-repeat;
+  background: url("assets/intro.png") center/cover no-repeat;
   height: 100vh;
   display: flex;
   justify-content: center;
